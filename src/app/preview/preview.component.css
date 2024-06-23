@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+button:hover {
+    cursor: pointer;
+}
+.container {
+    padding-top: 2rem;
+    width: 100vw;
+    height: 100vh;
+    outline: none;
+    outline-offset: none;
+    background-color: #36454F;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows:  8fr 3fr;
+    align-items: center;
+}
+.image-container { 
+    display: grid;
+    margin: 0;border: 0;
+    width: 33vw;
+    height: 62vh;
+    object-fit: cover;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    grid-row: 1 / 2;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+div .main-image{
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+    max-height: 100%;
+  
+}
+.slide {
+    animation-name: slide;
+    animation-duration: 0.5s;
+}
+
+
+.previous-container {
+    display: grid;
+    margin: 0;border: 0;
+    width: 30vw;
+    height: 33vh;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-items: stretch;
+justify-content: center;
+padding-left: 2rem;
+z-index: 2;
+}
+.next-container {
+    display: grid;
+    margin: 0;border: 0;
+    width: 30vw;
+    height: 33vh;
+    grid-row: 1 / 2;
+    grid-column: 3 /4 ;
+    align-items: stretch;
+    justify-content : center;
+    z-index: 2;
+}
+
+
+.previous {
+    color:whitesmoke;
+    background-color: transparent;
+    font-size: 5rem;
+    border: none;
+    opacity: 0.4;
+    align-self: center;
+
+}
+.next {
+    color:whitesmoke;
+    background-color: transparent;
+    font-size: 5rem;
+    border: none;
+    opacity: 0.4;
+
+}
+.previous:hover{
+    background-color: rgba(151, 150, 150, 0.856);
+    color: black;
+    opacity: 1;
+}
+.next:hover{
+    background-color: rgba(151, 150, 150, 0.856);
+    color: black;
+    opacity: 1;
+}
+
+.preview {
+    display: flex;
+    position: absolute;
+    background-color:  rgba(0, 0, 0, 0.514);
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    width: 100svw;
+    height: 10rem;
+    flex-wrap: nowrap;
+    z-index: 6;
+    padding-bottom:2rem;
+
+}
+.preview img {
+    width: 5rem;
+    height: 5rem;
+    opacity: 0.6;
+    padding-top: .4rem;
+
+}
+.preview .highlight {
+    margin-bottom: 1.5rem;
+    width: 7rem;
+    height: 7rem;
+    opacity: 1;
+    align-self: center;
+    
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(70%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}

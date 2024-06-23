@@ -1,0 +1,23 @@
+
+<div class="container" >
+    <div class="previous-container">
+        <button class="previous" (click)="previous()" >
+            <i class='bx bx-chevron-left'></i>
+                </button>
+    </div>
+<div class="image-container" >
+    <img [src]="image[i]" alt="no pic" class="main-image" draggable="false" >
+</div>
+    <div class="next-container">
+        <button class="next" (click)="next()" >
+            <i class='bx bx-chevron-right'></i>
+        </button>
+    </div>
+<div class="preview">
+    @for (item of image; track $index) {
+@if (item == image[i] || item ==image[i+1] || item ==image[i-1]) {
+    <img [src]="item" [ngClass]="{highlight: item==image[i]}"alt="" (click)="i=image.indexOf(item)" draggable="false">
+}
+    }
+ </div>
+</div>

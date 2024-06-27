@@ -32,6 +32,17 @@ button:hover {
     position: relative;
 
 }
+.image-container h4 {
+    justify-self: center;
+    align-self: normal;
+    color: whitesmoke;
+    font-family: inter;
+    font-size: .7rem;
+    margin-top: .4rem;
+    padding: .2rem .3rem;
+    background-color:  rgba(0, 0, 0, 0.514);
+    border-radius: 2rem;
+}
 div .main-image{
     position: relative;
     justify-self: center;
@@ -116,11 +127,11 @@ z-index: 2;
     width: 3rem;
     height: 3rem;
     opacity: 0.6;
-    padding-top: .4rem;
+    padding-top: .2rem;
 
 }
 .preview .highlight {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     width: 5rem;
     height: 5rem;
     opacity: 1;

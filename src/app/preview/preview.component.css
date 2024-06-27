@@ -41,7 +41,9 @@ button:hover {
     margin-top: .4rem;
     padding: .2rem .3rem;
     background-color:  rgba(0, 0, 0, 0.514);
+    position:absolute;
     border-radius: 2rem;
+    bottom: 0;
 }
 div .main-image{
     position: relative;

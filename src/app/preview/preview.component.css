@@ -106,23 +106,23 @@ z-index: 2;
     justify-content: center;
     align-self: flex-end;
     width: 100svw;
-    height: 10rem;
+    height: 7rem;
     flex-wrap: nowrap;
     z-index: 6;
     padding-bottom:2rem;
 
 }
 .preview img {
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     opacity: 0.6;
     padding-top: .4rem;
 
 }
 .preview .highlight {
     margin-bottom: 1.5rem;
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
     opacity: 1;
     align-self: center;
     
